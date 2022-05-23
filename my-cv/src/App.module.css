@@ -1,0 +1,186 @@
+.App {
+    text-align: center;
+    flex-wrap: wrap;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    background-color: darkgray;
+}
+.HeaderContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:250px;
+    margin-right: 5%;
+    padding: 1%;
+    background-color: white;
+}
+.Greetings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+
+}
+.GreetingsContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: darkgray;
+    width: 90%;
+    height: 80%;
+}
+.welcomeBlock{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 1%;
+
+}
+.PhotoBlock{
+
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.SkillsWrap{
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+
+}
+.SkillsWrapContent{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+
+}
+.Skills{
+    background-color: darkgray;
+}
+.ProjectWrap{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+
+}
+.ProjectWrapContent{
+    background-color: darkgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+
+}
+.Project{
+    background-color: #ffffff;
+}
+.OfferWrap{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.OfferContent{
+    background-color: white;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.OfferItem{
+   background-color: darkgray;
+    width: 40%;
+}
+.ContactsWrap{
+ background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.ContactsContent{
+    background-color: darkgray;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.ContactsItem{
+ background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ContactsForm{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+
+}
+.ContactsFormItem{
+    background-color: darkgray;
+    margin: 2%;
+}
+.FooterWrap{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.FooterContent{
+ background-color: white;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.FooterItem{
+    background-color: darkgray;
+}
+.StrangeThing{
+    background-color: white;
+ display: flex;
+    flex-direction: row;
+
+}
+.StrangeThingItem{
+    border: solid 1px;
+    background-color: darkgray;
+    width: 20px;
+    height: 20px;
+}
