@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CV/static/css/main.3fca254c.css",
+    "main.js": "/CV/static/js/main.fc3f4a4a.js",
+    "static/js/787.e8871c4f.chunk.js": "/CV/static/js/787.e8871c4f.chunk.js",
+    "static/media/atom-symbol.png": "/CV/static/media/atom-symbol.5cb83655567dd3efc230.png",
+    "index.html": "/CV/index.html",
+    "main.3fca254c.css.map": "/CV/static/css/main.3fca254c.css.map",
+    "main.fc3f4a4a.js.map": "/CV/static/js/main.fc3f4a4a.js.map",
+    "787.e8871c4f.chunk.js.map": "/CV/static/js/787.e8871c4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fca254c.css",
+    "static/js/main.fc3f4a4a.js"
+  ]
+}
