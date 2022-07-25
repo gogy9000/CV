@@ -53,13 +53,16 @@
 .welcomeBlock {
     border: 1px solid;
     display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center;
     background-color: white;
     flex-wrap: wrap;
     padding: 1%;
     margin: 1%;
-
+    font: 400 14px/1.8 'Poppins', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .PhotoBlock {

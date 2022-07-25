@@ -33,7 +33,15 @@ const Greetings = () => {
     return (
         <div className={styles.Greetings}>
             <div className={styles.GreetingsContent}>
-                <span className={styles.welcomeBlock}>hi my name Ivan!<br/> I`am front-end developer</span>
+                <div className={styles.welcomeBlock}>
+                    <span>Hi There</span>
+                    <h1>
+                        I am <br/>
+                        <span>Ivan Goropashnyj</span>
+                    </h1>
+                    <p >I`am front-end developer</p>
+                </div>
+
                 <div className={styles.PhotoBlock}>
                     <img
                         src="https://sun9-west.userapi.com/sun9-50/s/v1/if1/DGLU1MQAnRSHrFMo8vJXVXDaLNHHLyW0j1_hP8d-74W3kxkaxAo2lAkifzF7qfesfWnCeaDi.jpg?size=840x600&quality=96&type=album"
