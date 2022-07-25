@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './App.module.css'
+import styles from './App.module.scss'
 import atom from './atom-symbol.png'
-
 
 export const App = () => {
     return (
@@ -34,12 +33,11 @@ const Greetings = () => {
         <div className={styles.Greetings}>
             <div className={styles.GreetingsContent}>
                 <div className={styles.welcomeBlock}>
-                    <span>Hi There</span>
-                    <h1>
-                        I am <br/>
-                        <span>Ivan Goropashnyj</span>
-                    </h1>
-                    <p >I`am front-end developer</p>
+                    <h3>Hi There</h3>
+
+                      <h2>I am <span>Ivan Goropashnyj</span></h2>
+
+                    <h3>I`am front-end developer</h3>
                 </div>
 
                 <div className={styles.PhotoBlock}>
@@ -128,7 +126,7 @@ const ProjectWrap = () => {
         <div className={styles.ProjectWrap}>
 
             <div className={styles.ProjectWrapContent}>
-                <div>Project</div>
+                <div className={styles.ProjectWrapContentTitle}>Project</div>
                 <div className={styles.ProjectWrapContentBlock}>
                     <Project projectName={'bla'} icon={atom}>
                         Lorem ipsum dolor sit amet,
@@ -158,8 +156,6 @@ const ProjectWrap = () => {
                         sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua.
                     </Project>
-
-
                 </div>
             </div>
         </div>
@@ -191,17 +187,24 @@ const Offer = () => {
         </div>
     )
 }
-const Contacts = () => {
+
+export const Contacts = () => {
     return (
-        <div className={styles.ContactsWrap}>
-            <div className={styles.ContactsContent}>
-                <span className={styles.ContactsItem}>Contacts</span>
-                <form className={styles.ContactsForm}>
-                    <input className={styles.ContactsFormItem} type="text" name="" id=""/>
-                    <input className={styles.ContactsFormItem} type="text" name="" id=""/>
-                    <textarea className={styles.ContactsFormItem}/>
+        <div className={styles.contactsBlock}>
+            <div className={`${styles.container} ${styles.contactsContainer}`}>
+                {/*<Title title={'Hire Me.'}*/}
+                {/*       subTitle={'Let\'s Say Hi'}*/}
+                {/*       description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>*/}
+                <p className={styles.email}>
+                    Contact Email: <a className={styles.linkEmail} href="mailto:example@gmail.com">example@gmail.com</a>
+                </p>
+                <form className={styles.form}>
+                    <input placeholder="Your name" type="text" name="name" className={styles.input}/>
+                    <input placeholder="Your e-mail" type="text" name="email" className={styles.input}/>
+                    <textarea placeholder="Enter your message" name="message" className={styles.textarea}/>
                 </form>
-                <span className={styles.ContactsItem}>dispatch</span>
+                <button className={styles.button}>Send</button>
+
             </div>
         </div>
     )
@@ -223,6 +226,22 @@ const Footer = () => {
                 </div>
                 <div className={styles.FooterItem}>All rights reserved</div>
             </div>
+        </div>
+    )
+}
+
+
+type TitleType = {
+    title: string
+    subTitle: string
+    description: string
+}
+export const Title = (props: TitleType) => {
+    return (
+        <div className={styles.title}>
+            <span className={styles.subTitle}>{props.subTitle}</span>
+            <h2><span>{props.title}</span></h2>
+            <p>{props.description}</p>
         </div>
     )
 }

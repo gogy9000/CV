@@ -1,0 +1,20 @@
+@import './variables';
+
+@mixin text($fontSize,$lineHeight,$textColor) {
+  font-family: $fontFamily;
+  color: $textColor;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin button() {
+  text-decoration: none;
+  padding: 0 23px;
+  height: 40px;
+  display: inline-block;
+  border: 2px solid $secondaryTextColor;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  letter-spacing: 0.2px;
+}
