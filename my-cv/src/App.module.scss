@@ -3,7 +3,14 @@
 .App {
     text-align: center;
     flex-wrap: wrap;
-    background-color: $bgColor;
+
+    &:nth-child(odd){
+        background-color: $bgColor;
+    }
+    &:nth-child(even){
+        background-color: #101010;
+    }
+
 
     .Header {
         display: flex;
@@ -11,7 +18,6 @@
         justify-content: flex-end;
         align-items: center;
         height: 100px;
-        background-color: $bgSecondColor;
         @include text(20px, 38px,white);
 
         .HeaderContent {
@@ -358,6 +364,7 @@
         }
     }
 }
+
 //.footerBlock {
 //    background-color: $bgColor;
 //    font-family: $fontFamily;
