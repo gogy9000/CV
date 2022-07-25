@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './App.module.scss'
 import atom from './atom-symbol.png'
+import telegramIcon from './assets/images/telegram.png'
+import linkedinIcon from './assets/images/linkedin.png'
+import githubIcon from './assets/images/github.png'
 
 export const App = () => {
     return (
@@ -9,7 +12,7 @@ export const App = () => {
             <Greetings/>
             <SkillsWrap/>
             <ProjectWrap/>
-            <Offer/>
+            {/*<Offer/>*/}
             <Contacts/>
             <Footer/>
         </div>
@@ -190,11 +193,12 @@ const Offer = () => {
 
 export const Contacts = () => {
     return (
-        <div className={styles.contactsBlock}>
-            <div className={`${styles.container} ${styles.contactsContainer}`}>
-                {/*<Title title={'Hire Me.'}*/}
-                {/*       subTitle={'Let\'s Say Hi'}*/}
-                {/*       description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>*/}
+        // <div className={`${styles.contactsContainer}${styles.container}`}>
+            <div className={styles.contactsBlock}>
+                <Title title={'Hire Me.'}
+                       subTitle={'Let\'s Say Hi'}
+                       description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}
+                />
                 <p className={styles.email}>
                     Contact Email: <a className={styles.linkEmail} href="mailto:example@gmail.com">example@gmail.com</a>
                 </p>
@@ -206,23 +210,30 @@ export const Contacts = () => {
                 <button className={styles.button}>Send</button>
 
             </div>
-        </div>
+        // </div>
     )
 }
 const Footer = () => {
     return (
         <div className={styles.FooterWrap}>
             <div className={styles.FooterContent}>
-                <div className={styles.FooterItem}>My Name</div>
+                <div className={styles.FooterItem}>Ivan Goro</div>
                 <div className={styles.StrangeThing}>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-                    <div className={styles.StrangeThingItem}>.</div>
-
+                    <div className={styles.StrangeThingItem}>
+                        <a href={'https://t.me/DevAndreyIT'}>
+                            <img className={styles.socialIconItem} src={telegramIcon}/>
+                        </a>
+                    </div>
+                    <div className={styles.StrangeThingItem}>
+                        <a href={'https://www.linkedin.com/in/devandreyit/'}>
+                            <img className={styles.socialIconItem} src={linkedinIcon}/>
+                        </a>
+                    </div>
+                    <div className={styles.StrangeThingItem}>
+                        <a href={'https://github.com/DreamLife37'}>
+                            <img className={styles.socialIconItem} src={githubIcon}/>
+                        </a>
+                    </div>
                 </div>
                 <div className={styles.FooterItem}>All rights reserved</div>
             </div>
