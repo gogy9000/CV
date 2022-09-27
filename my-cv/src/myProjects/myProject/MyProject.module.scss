@@ -1,0 +1,72 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.portfolio {
+  width: 350px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  .projectImgContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+    }
+
+    .myProjectButton {
+      @include text(16px, 38px);
+      @include button();
+
+      &:hover {
+        background-color: $primaryColor;
+        border: 2px solid $primaryColor;
+
+        &:hover :before {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 25px;
+
+    .projectTitle {
+      @include text(30px, 8px);
+    }
+
+    .description {
+      @include text(16px, 8px);
+      color: $secondaryColor;
+    }
+
+  }
+}
+
+
+
+

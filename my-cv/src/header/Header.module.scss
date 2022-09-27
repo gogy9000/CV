@@ -1,0 +1,40 @@
+@import '../common/styles/sass/mixins.scss';
+@import '../common/styles/sass/variables.scss';
+
+.header {
+  @include flex(row, space-between, center, nowrap);
+  width: 100%;
+  min-height: $heightHeader;
+  background-color: $bgColor;
+  //position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.95;
+  z-index: 2;
+
+  .headerSection {
+    @include flex(row, space-between, center, wrap);
+
+    .language {
+      cursor: pointer;
+      color: white;
+      padding-right: 60px;
+    }
+
+    .active {
+      color: $primaryColor;
+    }
+  }
+
+  .logo {
+    @include text(20px, 38px);
+    color: $textColor;
+    float: left;
+    padding-left: 40px;
+    font-weight: 500;
+  }
+}
+
+

@@ -1,0 +1,54 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  background-color: #121528;
+  font-family: $fontFamily;
+  //min-height: calc(100vh - 80px);
+  min-height: calc(100vh);
+  display: flex;
+  align-items: center;
+
+  .mainContainer {
+    @include container();
+    @include flex(row, space-between, center, wrap);
+
+    .titleBlock {
+
+      .subTitle {
+        color: $secondaryColor;
+        font-size: 18px;
+      }
+
+      .title {
+        color: white;
+        font-size: 54px;
+        line-height: 68px;
+
+        & span {
+          color: $primaryColor;
+        }
+      }
+
+      .downloadCV {
+        @include text(16px, 38px);
+        @include button();
+
+        &:hover {
+          background-color: $primaryColor;
+          border: 2px solid $primaryColor;
+        }
+      }
+    }
+
+    .photo {
+      margin: 10px;
+      width: 300px;
+      height: 380px;
+      background-color: $textColor;
+      border-radius: 15px;
+    }
+  }
+
+}
+

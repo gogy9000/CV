@@ -1,0 +1,64 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.aboutMeBlock {
+  background-color: $bgSecondColor;
+  font-family: $fontFamily;
+  min-height: 100%;
+  padding-bottom: 30px;
+
+  .aboutMeContainer {
+    @include container();
+    @include flex(column, space-between, flex-start, wrap);
+
+    .aboutMeWrapper {
+      //max-width: 60%;
+    }
+
+    .menuTab {
+      @include text(16px, 28px);
+      border: 1px solid $borderColor;
+      border-radius: 4px;
+      display: inline-flex;
+      cursor: pointer;
+
+      .navMenu {
+        .navItem {
+          color: $textColor;
+          padding: 0 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+        }
+
+        .navItemActive {
+          text-decoration: none;
+          padding: 0 15px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $primaryColor;
+          border-radius: 4px;
+          position: relative;
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+
+    .contentTab {
+
+    }
+
+  }
+
+
+}
+
+
+
+
+
+

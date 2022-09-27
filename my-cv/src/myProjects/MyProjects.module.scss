@@ -1,0 +1,31 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.myProjectsBlock {
+  min-height: 100%;
+  background-color: $bgColor;
+  padding-bottom: 30px;
+  font-family: $fontFamily;
+
+  .myProjectsContainer {
+    @include container();
+    @include flex(column, space-between, flex-start, wrap);
+
+    .myProjects {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      //@media screen and (max-width: 1315px) {
+      //  justify-content: space-between;
+      //}
+    }
+  }
+}
+
+
+
+
+
