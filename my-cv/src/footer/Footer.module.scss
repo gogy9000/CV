@@ -1,0 +1,39 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.footerBlock {
+  background-color: $bgColor;
+  font-family: $fontFamily;
+
+  .footerContainer {
+    @include container();
+    @include flex(column, space-between, center, wrap);
+
+    & h3 {
+      @include text(16px, 28px);
+    }
+
+    .iconsContainer {
+      display: flex;
+
+
+      .socialIconItem {
+        height: 45px;
+        width: 45px;
+        padding: 5px;
+        &:hover {
+          box-sizing: border-box;
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+        }
+      }
+    }
+
+    & div {
+      @include text(16px, 28px);
+    }
+  }
+}
+
+
+
+

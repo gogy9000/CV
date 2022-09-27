@@ -1,0 +1,35 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.navSection {
+  font-family: $fontFamily;
+  @include flex(row, space-between, center, wrap);
+
+  a {
+    padding: 10px 15px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    letter-spacing: 0.2px;
+    border-radius: 4px;
+    position: relative;
+    color: $textColor;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primaryColor;
+      transition: 0.3s;
+    }
+  }
+
+  .active {
+    background-color: $primaryColor;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+
+}
+
+
