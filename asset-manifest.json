@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.3fca254c.css",
-    "main.js": "/CV/static/js/main.fc3f4a4a.js",
+    "main.css": "/CV/static/css/main.ac289174.css",
+    "main.js": "/CV/static/js/main.c8756582.js",
     "static/js/787.e8871c4f.chunk.js": "/CV/static/js/787.e8871c4f.chunk.js",
-    "static/media/atom-symbol.png": "/CV/static/media/atom-symbol.5cb83655567dd3efc230.png",
+    "static/media/photo0000.jpg": "/CV/static/media/photo0000.b61335ada5629b193fac.jpg",
+    "static/media/telegram.png": "/CV/static/media/telegram.08777322cde5da5eb66f.png",
+    "static/media/github.png": "/CV/static/media/github.3e63503e54e0f9cc5bcd.png",
     "index.html": "/CV/index.html",
-    "main.3fca254c.css.map": "/CV/static/css/main.3fca254c.css.map",
-    "main.fc3f4a4a.js.map": "/CV/static/js/main.fc3f4a4a.js.map",
+    "static/media/hamburgerMenu.svg": "/CV/static/media/hamburgerMenu.1c1fe27bbd39ae96301a48dc6e7840c0.svg",
+    "main.ac289174.css.map": "/CV/static/css/main.ac289174.css.map",
+    "main.c8756582.js.map": "/CV/static/js/main.c8756582.js.map",
     "787.e8871c4f.chunk.js.map": "/CV/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fca254c.css",
-    "static/js/main.fc3f4a4a.js"
+    "static/css/main.ac289174.css",
+    "static/js/main.c8756582.js"
   ]
 }
