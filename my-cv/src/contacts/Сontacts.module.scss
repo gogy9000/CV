@@ -38,17 +38,17 @@
       text-decoration: none;
       position: relative;
 
-      &:hover {
-        &::before {
-          background: $colorGradient;
-          position: absolute;
-          content: "";
-          left: 0;
-          bottom: 0;
-          width: 280px;
-          height: 1px;
-        }
-      }
+      //&:hover {
+      //  &::before {
+      //    background: $colorGradient;
+      //    position: absolute;
+      //    content: "";
+      //    left: 0;
+      //    bottom: 0;
+      //    width: content-box;
+      //    height: 1px;
+      //  }
+      //}
     }
   }
 
