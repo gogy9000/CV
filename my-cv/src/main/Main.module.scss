@@ -4,14 +4,20 @@
 .mainBlock {
   background-color: #121528;
   font-family: $fontFamily;
-  //min-height: calc(100vh - 80px);
-  min-height: calc(100vh);
+  min-height: calc(100vh - 80px);
+  //min-height: calc(100vh);
   display: flex;
   align-items: center;
+  padding-top: 100px;
 
   .mainContainer {
     @include container();
     @include flex(row, space-between, center, wrap);
+
+    @media screen and (max-width: 760px) {
+      @include flex(column, center, center, wrap);
+
+    }
 
     .titleBlock {
 
@@ -28,6 +34,10 @@
         & span {
           color: $primaryColor;
         }
+        @media screen and (max-width: 800px) {
+          font-size: 25px;
+        }
+
       }
 
       .downloadCV {
@@ -43,10 +53,19 @@
 
     .photo {
       margin: 10px;
-      width: 300px;
-      height: 380px;
+      //max-width: 330px;
+      //height: 380px;
       background-color: $textColor;
       border-radius: 15px;
+      @media screen and (max-width: 1300px) {
+        max-width: 400px;
+      }
+      @media screen and (max-width: 1250px) {
+        max-width: 300px;
+      }
+      @media screen and (max-width: 380px) {
+        max-width: 280px;
+      }
     }
   }
 

@@ -1,7 +1,8 @@
 @import '../../common/styles/sass/variables';
 
 .skillsContainer {
-
+  display: flex;
+  justify-content: center;
 & ul {
       list-style: none;
 
@@ -14,7 +15,7 @@
 
 & li {
       padding-bottom: 20px;
-      margin-left: 20px;
+      //margin-left: 20px;
 
 & img {
       padding-left: 5px;
